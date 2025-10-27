@@ -1,0 +1,19 @@
+{
+    "list" :[
+        {"id":1, "name":"Albatris", "age":15, "city":"Has"},
+        {"id":2, "name":"Lis", "age":14, "city":"Pirane"},
+        {"id":3, "name":"Fazli", "age":15, "city":"Ratkoc"},
+        {"id":4, "name":"Arbri", "age":16, "city":"Prizren"},
+        {"id":5, "name":"Lulzim", "age":15, "city":"Gjakove"}
+    ]
+}
+
+{
+    "list2" :[
+        {"id":1, "name":"Albatris", "age":15, "city":"Has"},
+        {"id":2, "name":"Lis", "age":14, "city":"Pirane"},
+        {"id":3, "name":"Fazli", "age":15, "city":"Ratkoc"},
+        {"id":4, "name":"Arbri", "age":16, "city":"Prizren"},
+        {"id":5, "name":"Lulzim", "age":15, "city":"Gjakove"}
+    ]
+}
