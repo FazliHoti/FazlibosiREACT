@@ -1,0 +1,25 @@
+{ "list":
+    [  
+    { "id": 1,
+      "emri": "Fazli Hoti",
+      "image": "mhmt akf.jfif",
+      "mosha": 25,
+      "title": "1",
+      "description": "Lorem ipsum dolor sit amet consectetur elit."
+    },
+    {  "id": 2,
+      "emri": "Muhamet Akif",
+      "image": "mhmtakif2.jfif",
+      "mosha": 22,
+      "title": "2",
+      "description": "Lorem ipsum dolor sit amet consectetur elit."
+    },
+    { "id": 3,
+      "emri": "Tajdin Trsen",
+      "image": "tjtrsen.jpg",
+      "mosha": 24,
+      "title": "3",
+      "description": "Lorem ipsum dolor sit amet consectetur elit."
+    }
+]
+}
