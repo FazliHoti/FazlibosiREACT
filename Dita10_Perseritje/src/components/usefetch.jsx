@@ -18,15 +18,23 @@ function usefetch(url) {
              setError(err.message)
              setLoading(false);
           })
-        }, 10000)
+        }, 1000)
         }, [])
-  return {
-    list,
-    error,
-    loading
-}
-    
-  
+        const deleteButton = (id) => {
+    const newlist = list.filter(item => item.id != id);
+    setList(newlist); 
+  };
+      const viewButton = (id) => {
+    const newlist2 = list.filter(item => item.id != id);
+    setList(newlist2)
+  };
+ return {
+      list,
+      error,
+      loading,
+      deleteButton,
+      viewButton,
+  }
 }
 
 export default usefetch

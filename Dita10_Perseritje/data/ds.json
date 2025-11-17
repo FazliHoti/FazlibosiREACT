@@ -3,22 +3,37 @@
     { "id": 1,
       "emri": "Fazli Hoti",
       "image": "mhmt akf.jfif",
-      "mosha": 25,
-      "title": "1",
+      "kush": "Nxenes i shkollse se mesme.",
       "description": "Lorem ipsum dolor sit amet consectetur elit."
     },
     {  "id": 2,
       "emri": "Muhamet Akif",
       "image": "mhmtakif2.jfif",
-      "mosha": 22,
-      "title": "2",
+      "kush":"Krijuesi i shkollse se mesme.",
       "description": "Lorem ipsum dolor sit amet consectetur elit."
     },
     { "id": 3,
       "emri": "Tajdin Trsen",
       "image": "tjtrsen.jpg",
-      "mosha": 24,
-      "title": "3",
+      "kush":"Mesues ne shkollen e mesme.",
+      "description": "Lorem ipsum dolor sit amet consectetur elit."
+    },
+    { "id": 4,
+      "emri": "Ardian Hoti",
+      "image": "ft1.jfif",
+      "kush":"Drejtor i shkollse se mesme.",
+      "description": "Lorem ipsum dolor sit amet consectetur elit."
+    },
+    { "id": 5,
+      "emri": "Lulzim Berisha",
+      "image": "ft2.jfif",
+      "kush":"Zedhenes i drejtorit te shkollse se mesme.",
+      "description": "Lorem ipsum dolor sit amet consectetur elit."
+    },
+    { "id": 6,
+      "emri": "Blerona Gashi",
+      "image": "ft3.jfif",
+      "kush":"Administruese i shkollse se mesme.",
       "description": "Lorem ipsum dolor sit amet consectetur elit."
     }
 ]

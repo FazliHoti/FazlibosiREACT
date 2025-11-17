@@ -1,45 +1,46 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function BlogList(props) {
+function BlogList({ list, title, deleteButton, editButton }) {
+  const navigate = useNavigate();
 
-    const list = props.list
-    const title = props.title
-    const deleteButton = props.deleteButton
-    const viewButton = props.viewButton
+  const handleView = (id) => {
+    navigate(`/details/${id}`);
+  };
+
   return (
-    <>
     <div className="blog-list">
-        <h2>{ title }</h2>
-        <table border={1} cellPadding={10} cellSpacing={0}>
-          <thead>
-            <tr>
-                <th>Id</th>
-                <th>Emri</th>
-                <th>Mosha</th>
-                <th>Veprimet</th>
-                <th>Foto</th>
-            </tr>   
-          </thead>
-          <tbody>
-        { list.map( (item) => (
+      <h2>{title}</h2>
+      <table border={1} cellPadding={10} cellSpacing={0}>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Emri</th>
+            <th>Kush eshte?</th>
+            <th>Foto</th>
+            <th>Veprimet</th>
+          </tr>
+        </thead>
+        <tbody>
+          {list.map((item) => (
             <tr key={item.id}>
-                <td>{item.id}</td>
-                <td>{item.emri}</td>
-                <td>{item.mosha}</td>
-                <td>
-                    <button onClick={() => deletebutton(item.id)}>Delete</button>
-                    <button onClick={() => props.editButton(item.id)}>Edit</button>
-                    <button onClick={() => props.viewButton(item.id)}>View</button>
-                </td>
-                <td><img src={item.image} width="100" alt={`Foto e ${item.emri}`} /></td>
+              <td>{item.id}</td>
+              <td>{item.emri}</td>
+              <td>{item.kush}</td>
+              <td>
+                <img src={item.image} width="100" alt={`Foto e ${item.emri}`} />
+              </td>
+              <td>
+                <button onClick={() => editButton(item.id)}>Edit</button>
+                <button onClick={() => viewButton(item.id)}>View</button>
+                <button onClick={() => deleteButton(item.id)}>Delete</button>
+              </td>
             </tr>
-        ))
-        }
+          ))}
         </tbody>
-        </table>
+      </table>
     </div>
-    </>
-  )
+  );
 }
 
-export default BlogList
+export default BlogList;
