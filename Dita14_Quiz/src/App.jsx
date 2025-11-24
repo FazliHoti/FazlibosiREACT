@@ -31,7 +31,7 @@ const questions = [
       "Kur përdorim vargje"
     ],
     answer: "Dependency bosh",
-  },
+  },-
   {
     question: "Çfarë bën memoization në React?",
     options: [
